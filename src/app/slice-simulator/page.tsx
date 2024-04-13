@@ -14,6 +14,7 @@ export default function SliceSimulatorPage({
 
   return (
     <SliceSimulator>
+      background:"#070815" ;
       <SliceZone slices={slices} components={components} />
     </SliceSimulator>
   );
