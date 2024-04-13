@@ -1,3 +1,7 @@
+import WordMark from "./WordMark";
+
 export default function Footer() {
-  return <div>Footer</div>;
+  return (
+    <div><WordMark/></div>
+  )
 }
