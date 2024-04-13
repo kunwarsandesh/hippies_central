@@ -7,19 +7,18 @@ export default async function Footer() {
   const client = createClient();
   const settings = await client.getSingle('settings');
   return (
-    <footer>
-        <Link href="/">
+    <footer className="flex flex-col items-center justify-between gap-6 border-slate-600 px-8 py-7 md:flex-row">
+      <Link href="/">
         <WordMark />
-        <span>Hippes Central Home Page</span>
-        </Link>
-      
-      <nav>
-        <ul>
+        <span className="sr-only">Hippes Central Home Page</span>
+      </Link>
+
+      <nav aria-label ="Footer">
+        <ul className='flex gap-6'>
           {settings.data.navigation.map((item) => (
             <li key={item.label}>
-              <PrismicNextLink field={item.link}>
-                {item.label}
-              </PrismicNextLink>
+              <PrismicNextLink field={item.link}
+              className="inline-flex min-h-11 text-sm text-slate-400 hover:text-white">{item.label}</PrismicNextLink>
             </li>
           ))}
         </ul>
