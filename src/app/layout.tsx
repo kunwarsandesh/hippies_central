@@ -21,7 +21,6 @@ export default function RootLayout({
       <body className="bg-[#070815] text-white">
         <Header />
         <main>{children}</main>
-
         <Footer />
         <PrismicPreview repositoryName={repositoryName} />
       </body>
