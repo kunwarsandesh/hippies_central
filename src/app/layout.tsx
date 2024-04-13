@@ -1,7 +1,7 @@
 import { PrismicPreview } from '@prismicio/next';
 import { repositoryName } from '@/prismicio';
 import { DM_Sans } from 'next/font/google';
-import '.././styles/global.css';
+import '.././styles/global.scss';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
