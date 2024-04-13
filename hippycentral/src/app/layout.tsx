@@ -1,8 +1,8 @@
-import { PrismicPreview } from "@prismicio/next";
-import { repositoryName } from "@/prismicio";
+import { PrismicPreview } from '@prismicio/next';
+import { repositoryName } from '@/prismicio';
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {

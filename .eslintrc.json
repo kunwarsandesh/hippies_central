@@ -1,9 +1,12 @@
 {
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
   "extends": [
-    "plugin:prettier/recommended",
-    "next/core-web-vitals"
+    "plugin:prettier/recommended" // Ensures ESLint works well with Prettier
   ],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error" // Ensures Prettier issues are treated as errors
   }
 }

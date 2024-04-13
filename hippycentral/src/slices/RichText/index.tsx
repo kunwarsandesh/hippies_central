@@ -1,21 +1,21 @@
-import type { Content } from "@prismicio/client";
-import { PrismicNextLink } from "@prismicio/next";
+import type { Content } from '@prismicio/client';
+import { PrismicNextLink } from '@prismicio/next';
 import {
   PrismicRichText,
   SliceComponentProps,
-  JSXMapSerializer,
-} from "@prismicio/react";
-import styles from "./index.module.css";
+  JSXMapSerializer
+} from '@prismicio/react';
+import styles from './index.module.css';
 
 const components: JSXMapSerializer = {
   hyperlink: ({ node, children }) => {
     return <PrismicNextLink field={node.data}>{children}</PrismicNextLink>;
   },
   label: ({ node, children }) => {
-    if (node.data.label === "codespan") {
+    if (node.data.label === 'codespan') {
       return <code>{children}</code>;
     }
-  },
+  }
 };
 
 /**
