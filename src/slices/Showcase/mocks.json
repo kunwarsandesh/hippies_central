@@ -92,5 +92,90 @@
 			}
 		},
 		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "reverse",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Properly"
+						}
+					}
+				]
+			},
+			"image": {
+				"origin": {
+					"id": "c6eXs8UsvS4",
+					"url": "https://images.unsplash.com/photo-1571992049393-827d13da8fe3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8d2lkZSUyMGZsb3dlcnMlMjBzYWt1cmF8ZW58MHx8fHwxNzEzMTMxMjE1fDA&ixlib=rb-4.0.3&q=85",
+					"width": 3464,
+					"height": 2309
+				},
+				"url": "https://images.unsplash.com/photo-1571992049393-827d13da8fe3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8d2lkZSUyMGZsb3dlcnMlMjBzYWt1cmF8ZW58MHx8fHwxNzEzMTMxMjE1fDA&ixlib=rb-4.0.3&q=85",
+				"width": 3464,
+				"height": 2309,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"alt": "a field of orange flowers in the middle of the day",
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"icon": {
+				"__TYPE__": "FieldContent",
+				"value": "cycle",
+				"type": "Select"
+			},
+			"subheading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Brief"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Esse culpa labore excepteur magna nulla incididunt non culpa officia officia tempor eiusmod."
+						}
+					}
+				]
+			},
+			"button_text": {
+				"__TYPE__": "FieldContent",
+				"value": "then",
+				"type": "Text"
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://slicemachine.dev"
+				}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
 	}
 ]
