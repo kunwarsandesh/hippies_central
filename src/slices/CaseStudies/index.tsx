@@ -1,6 +1,11 @@
 import { createClient } from '@/prismicio';
 import { Content, isFilled } from '@prismicio/client';
-import { SliceComponentProps } from '@prismicio/react';
+import { PrismicNextLink } from '@prismicio/next';
+import {
+  PrismicRichText,
+  PrismicText,
+  SliceComponentProps
+} from '@prismicio/react';
 
 /**
  * Props for `CaseStudies`.
@@ -30,8 +35,30 @@ const CaseStudies = async ({
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-      Placeholder component for case_studies (variation: {slice.variation})
-      Slices
+      <PrismicRichText field={slice.primary.heading} />
+      <PrismicRichText field={slice.primary.body} />
+
+      <div className="mt-20 grid gap-16">
+        {CaseStudies.map((caseStudy, index) => {
+          if (caseStudy) {
+            return (
+              <div
+                key={caseStudy.id}
+                className="relative grid gap-4 opacity-85 transition-opacity duration-300 hover:cursor-pointer hover:opacity-100 md:grid-cols-2 md:gap-8 lg:grid-cols-3"
+              >
+                <h3 className="4xl">
+                  <PrismicText field={caseStudy.data.company} />
+                </h3>
+                <PrismicRichText field={caseStudy.data.description} />
+                <PrismicNextLink
+                  document={caseStudy}
+                  className="after:absolute after:inset-0 hover:underline"
+                ></PrismicNextLink>
+              </div>
+            );
+          }
+        })}
+      </div>
     </section>
   );
 };
