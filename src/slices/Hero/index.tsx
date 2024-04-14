@@ -1,5 +1,6 @@
+import ButtonLink from '@/app/components/ButtonLink';
 import { Content } from '@prismicio/client';
-import { PrismicNextLink } from '@prismicio/next';
+import { PrismicNextImage } from '@prismicio/next';
 import { PrismicRichText, SliceComponentProps } from '@prismicio/react';
 
 /**
@@ -18,8 +19,10 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
     >
       <PrismicRichText field={slice.primary.heading} />
       <PrismicRichText field={slice.primary.body} />
-      <PrismicNextLink field={slice.primary.button_link}>Link</PrismicNextLink>
-      <>{slice.primary.button_label}</>
+      <ButtonLink field={slice.primary.button_link}>
+        {slice.primary.button_label}
+      </ButtonLink>
+      <PrismicNextImage field={slice.primary.image} />
     </section>
   );
 };
