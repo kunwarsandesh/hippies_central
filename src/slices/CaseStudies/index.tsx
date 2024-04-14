@@ -1,4 +1,5 @@
-import { Content } from '@prismicio/client';
+import { createClient } from '@/prismicio';
+import { Content, isFilled } from '@prismicio/client';
 import { SliceComponentProps } from '@prismicio/react';
 
 /**
@@ -9,7 +10,21 @@ export type CaseStudiesProps = SliceComponentProps<Content.CaseStudiesSlice>;
 /**
  * Component for "CaseStudies" Slices.
  */
-const CaseStudies = ({ slice }: CaseStudiesProps): JSX.Element => {
+const CaseStudies = async ({
+  slice
+}: CaseStudiesProps): Promise<JSX.Element> => {
+  const client = createClient();
+
+  const CaseStudies = await Promise.all(
+    slice.items.map(async (item) => {
+      if (isFilled.contentRelationship(item.case_study)) {
+        return await client.getByID<Content.CaseStudyDocument>(
+          item.case_study.id
+        );
+      }
+    })
+  );
+
   return (
     <section
       data-slice-type={slice.slice_type}
