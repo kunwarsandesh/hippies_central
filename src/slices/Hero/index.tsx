@@ -43,9 +43,8 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
         )}
         {isFilled.image(slice.primary.image) && (
           <div className="glass-container mt-16 w-fit rounded-lg">
-            <div className="absolute">
-              <PrismicNextImage field={slice.primary.image} />
-            </div>
+            <div className="absolute" />
+            <PrismicNextImage field={slice.primary.image} />
           </div>
         )}
       </div>
