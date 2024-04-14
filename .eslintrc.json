@@ -1,12 +1,18 @@
 {
+  "extends": ["next", "plugin:prettier/recommended"],
   "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module"
+    "ecmaVersion": "latest", // Allows for the parsing of modern ECMAScript features
+    "sourceType": "module", // Allows for the use of imports
+    "ecmaFeatures": {
+      "jsx": true // Allows for the parsing of JSX
+    }
   },
-  "extends": [
-    "plugin:prettier/recommended" // Ensures ESLint works well with Prettier
-  ],
+  "settings": {
+    "react": {
+      "version": "detect" // Tells eslint-plugin-react to automatically detect the version of React to use
+    }
+  },
   "rules": {
-    "prettier/prettier": "warn" // Ensures Prettier issues are treated as errors
+    "prettier/prettier": "warn" //ser to "errors" on production
   }
 }
