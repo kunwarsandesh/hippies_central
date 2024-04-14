@@ -4,14 +4,9 @@
     "sourceType": "module"
   },
   "extends": [
-    "next/core-web-vitals",
-    "prettier",
-    "next",
     "plugin:prettier/recommended" // Ensures ESLint works well with Prettier
   ],
   "rules": {
-    "prettier/prettier": "error", // Ensures Prettier issues are treated as errors
-    "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off"
+    "prettier/prettier": "errors", // Ensures Prettier issues are treated as errors
   }
 }
