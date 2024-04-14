@@ -1,43 +1,43 @@
 [
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "default",
-		"primary": {
-			"heading": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading1",
-						"content": {
-							"text": "Attempt"
-						}
-					}
-				]
-			},
-			"body": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Adipisicing aute fugiat cupidatat et incididunt mollit elit irure irure ex ex ad minim pariatur quis. Labore ad fugiat do in sint sint. Labore qui aliquip sint non."
-						}
-					}
-				]
-			},
-			"button_link": {
-				"__TYPE__": "LinkContent",
-				"value": {
-					"__TYPE__": "ExternalLink",
-					"url": "http://twitter.com"
-				}
-			},
-			"button_label": {
-				"__TYPE__": "FieldContent",
-				"value": "course",
-				"type": "Text"
-			}
-		},
-		"items": []
-	}
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "heading": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "Attempt"
+            }
+          }
+        ]
+      },
+      "body": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Adipisicing aute fugiat cupidatat et incididunt mollit elit irure irure ex ex ad minim pariatur quis. Labore ad fugiat do in sint sint. Labore qui aliquip sint non."
+            }
+          }
+        ]
+      },
+      "button_link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "http://twitter.com"
+        }
+      },
+      "button_label": {
+        "__TYPE__": "FieldContent",
+        "value": "course",
+        "type": "Text"
+      }
+    },
+    "items": []
+  }
 ]

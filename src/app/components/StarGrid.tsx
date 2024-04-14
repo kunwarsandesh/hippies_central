@@ -8,7 +8,7 @@ export default function StarGrid() {
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 935 425"
-      className="absolute -top-14 -z-10"
+      className={`absolute -top-14 -z-10 ${dmSans.variable}`}
       id="star-grid"
       ref={container}
       opacity={0}
@@ -32,5 +32,5 @@ export default function StarGrid() {
         })}
       </g>
     </svg>
-  );className={dmSans.variable}
+  );
 }

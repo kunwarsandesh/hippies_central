@@ -13,7 +13,9 @@ export default function SliceSimulatorPage({
   const slices = getSlices(searchParams.state);
 
   return (
-    <SliceSimulator background="#070815"> {/* Note the use of curly braces to pass the background color as a prop */}
+    <SliceSimulator background="#070815">
+      {' '}
+      {/* Note the use of curly braces to pass the background color as a prop */}
       <SliceZone slices={slices} components={components} />
     </SliceSimulator>
   );

@@ -13,12 +13,16 @@ export default async function Footer() {
         <span className="sr-only">Hippes Central Home Page</span>
       </Link>
 
-      <nav aria-label ="Footer">
-        <ul className='flex gap-6'>
+      <nav aria-label="Footer">
+        <ul className="flex gap-6">
           {settings.data.navigation.map((item) => (
             <li key={item.label}>
-              <PrismicNextLink field={item.link}
-              className="inline-flex min-h-11 text-sm text-slate-400 hover:text-white">{item.label}</PrismicNextLink>
+              <PrismicNextLink
+                field={item.link}
+                className="inline-flex min-h-11 text-sm text-slate-400 hover:text-white"
+              >
+                {item.label}
+              </PrismicNextLink>
             </li>
           ))}
         </ul>
