@@ -1,9 +1,13 @@
 import Bounded from '@/app/components/Bounded';
 import ButtonLink from '@/app/components/ButtonLink';
 import StarGrid from '@/app/components/StarGrid';
-import { Content } from '@prismicio/client';
+import { Content, isFilled } from '@prismicio/client';
 import { PrismicNextImage } from '@prismicio/next';
-import { PrismicRichText, SliceComponentProps } from '@prismicio/react';
+import {
+  PrismicRichText,
+  PrismicText,
+  SliceComponentProps
+} from '@prismicio/react';
 
 /**
  * Props for `Hero`.
@@ -21,7 +25,11 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
     >
       <div className="relative">
         <StarGrid />
-        <PrismicRichText field={slice.primary.heading} />
+        {isFilled.richText(slice.primary.heading) && (
+          <h1 className="text-balance text-center text-5xl font-medium md:txt-7xl">
+            <PrismicText field={slice.primary.heading} />
+          </h1>
+        )}
         <PrismicRichText field={slice.primary.body} />
         <ButtonLink field={slice.primary.button_link}>
           {slice.primary.button_label}
