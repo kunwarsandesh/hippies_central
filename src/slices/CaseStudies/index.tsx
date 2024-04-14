@@ -46,7 +46,7 @@ const CaseStudies = async ({
                 key={caseStudy.id}
                 className="relative grid gap-4 opacity-85 transition-opacity duration-300 hover:cursor-pointer hover:opacity-100 md:grid-cols-2 md:gap-8 lg:grid-cols-3"
               >
-                <h3 className="4xl">
+                <h3 className="text-4xl">
                   <PrismicText field={caseStudy.data.company} />
                 </h3>
                 <div className="max-w-md">
