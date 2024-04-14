@@ -1,5 +1,6 @@
 import Bounded from '@/app/components/Bounded';
 import ButtonLink from '@/app/components/ButtonLink';
+import StarGrid from '@/app/components/StarGrid';
 import { Content } from '@prismicio/client';
 import { PrismicNextImage } from '@prismicio/next';
 import { PrismicRichText, SliceComponentProps } from '@prismicio/react';
@@ -18,12 +19,15 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-      <PrismicRichText field={slice.primary.heading} />
-      <PrismicRichText field={slice.primary.body} />
-      <ButtonLink field={slice.primary.button_link}>
-        {slice.primary.button_label}
-      </ButtonLink>
-      <PrismicNextImage field={slice.primary.image} />
+      <div className="relative">
+        <StarGrid />
+        <PrismicRichText field={slice.primary.heading} />
+        <PrismicRichText field={slice.primary.body} />
+        <ButtonLink field={slice.primary.button_link}>
+          {slice.primary.button_label}
+        </ButtonLink>
+        <PrismicNextImage field={slice.primary.image} />
+      </div>
     </Bounded>
   );
 };

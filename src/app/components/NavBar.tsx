@@ -17,7 +17,7 @@ export default function NavBar({ settings }: NavBarProps) {
           <span className="sr-only">Hippes Central Home Page</span>
         </Link>
 
-        <ul className="flex gap-6 items-center">
+        <ul className="flex items-center gap-6">
           {settings.data.navigation.map((item) => {
             if (item.cta_button) {
               return (
@@ -32,7 +32,7 @@ export default function NavBar({ settings }: NavBarProps) {
               <li key={item.label}>
                 <PrismicNextLink
                   field={item.link}
-                  className="inline-flex items-center min-h-11 text-sm text-slate-400 hover:text-white" 
+                  className="inline-flex min-h-11 items-center text-sm text-slate-400 hover:text-white"
                 >
                   {item.label}
                 </PrismicNextLink>
