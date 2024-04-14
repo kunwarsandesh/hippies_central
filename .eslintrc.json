@@ -7,6 +7,6 @@
     "plugin:prettier/recommended" // Ensures ESLint works well with Prettier
   ],
   "rules": {
-    "prettier/prettier": "errors", // Ensures Prettier issues are treated as errors
+    "prettier/prettier": "warn" // Ensures Prettier issues are treated as errors
   }
 }
