@@ -52,4 +52,8 @@ p {
   .signal-line {
     --rotation: 0deg;
   }
+
+  .ulnav {
+    @apply flex flex-col items-center justify-center;
+  }
 }
