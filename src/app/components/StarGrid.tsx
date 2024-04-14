@@ -1,5 +1,12 @@
 // src/components/StarGrid.tsx
 
+import { DM_Sans } from 'next/font/google';
+const dmSans = DM_Sans({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-dm-sans'
+  });
+
 export default function StarGrid() {
   const grid = [14, 30] as const;
 
