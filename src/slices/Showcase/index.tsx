@@ -22,8 +22,9 @@ const Showcase = ({ slice }: ShowcaseProps): JSX.Element => {
       <>{slice.primary.icon}</>
       <PrismicRichText field={slice.primary.subheading} />
       <PrismicRichText field={slice.primary.body} />
-      <>{slice.primary.button_text}</>
-      <PrismicNextLink field={slice.primary.button_link}>Link</PrismicNextLink>
+      <PrismicNextLink field={slice.primary.button_link}>
+        {slice.primary.button_text}
+      </PrismicNextLink>
     </Bounded>
   );
 };
