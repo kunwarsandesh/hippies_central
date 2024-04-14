@@ -36,10 +36,17 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
             <PrismicRichText field={slice.primary.body} />
           </div>
         )}
-        <ButtonLink field={slice.primary.button_link}>
-          {slice.primary.button_label}
-        </ButtonLink>
-        <PrismicNextImage field={slice.primary.image} />
+        {isFilled.link(slice.primary.button_link) && (
+          <ButtonLink className="mt-8" field={slice.primary.button_link}>
+            {slice.primary.button_label}
+          </ButtonLink>
+        )}
+        {isFilled.image(slice.primary.image) && (
+          <PrismicNextImage
+            className="rounded-lg mt-8"
+            field={slice.primary.image}
+          />
+        )}
       </div>
     </Bounded>
   );
