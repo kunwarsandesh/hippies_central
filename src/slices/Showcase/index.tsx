@@ -30,7 +30,7 @@ const Showcase = ({ slice }: ShowcaseProps): JSX.Element => {
           )
         }}
       />
-      <div className="grid">
+      <div className="mt-16 grid items-center rounded-xl border border-indigo-50/20 bg-gradient-to-b from-slate-50/15 to-slate-50/5 px-8 py-8 backdrop-blur-sm lg:grid-cols-3 lg:py-12">
         <div>
           <>{slice.primary.icon}</>
           <PrismicRichText field={slice.primary.subheading} />
