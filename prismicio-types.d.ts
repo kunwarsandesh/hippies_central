@@ -33,6 +33,17 @@ interface CaseStudyDocumentData {
   description: prismic.RichTextField;
 
   /**
+   * Logo Image field in *Case Study*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: case_study.logo_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo_image: prismic.ImageField<never>;
+
+  /**
    * Slice Zone field in *Case Study*
    *
    * - **Field Type**: Slice Zone
@@ -42,6 +53,17 @@ interface CaseStudyDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#slices
    */
   slices: prismic.SliceZone<CaseStudyDocumentDataSlicesSlice> /**
+   * Meta Title field in *Case Study*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: case_study.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_title: prismic.KeyTextField;
+
+  /**
    * Meta Description field in *Case Study*
    *
    * - **Field Type**: Text
@@ -49,7 +71,7 @@ interface CaseStudyDocumentData {
    * - **API ID Path**: case_study.meta_description
    * - **Tab**: SEO & Metadata
    * - **Documentation**: https://prismic.io/docs/field#key-text
-   */;
+   */
   meta_description: prismic.KeyTextField;
 
   /**
@@ -62,17 +84,6 @@ interface CaseStudyDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   meta_image: prismic.ImageField<never>;
-
-  /**
-   * Meta Title field in *Case Study*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A title of the page used for social media and search engines
-   * - **API ID Path**: case_study.meta_title
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  meta_title: prismic.KeyTextField;
 }
 
 /**
@@ -370,6 +381,76 @@ type BentoSliceVariation = BentoSliceDefault;
  * - **Documentation**: https://prismic.io/docs/slice
  */
 export type BentoSlice = prismic.SharedSlice<'bento', BentoSliceVariation>;
+
+/**
+ * Primary content in *CaseStudies → Primary*
+ */
+export interface CaseStudiesSliceDefaultPrimary {
+  /**
+   * Heading field in *CaseStudies → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: case_studies.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.TitleField;
+
+  /**
+   * Body field in *CaseStudies → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: case_studies.primary.body
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  body: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *CaseStudies → Items*
+ */
+export interface CaseStudiesSliceDefaultItem {
+  /**
+   * Case Study field in *CaseStudies → Items*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: case_studies.items[].case_study
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  case_study: prismic.ContentRelationshipField;
+}
+
+/**
+ * Default variation for CaseStudies Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CaseStudiesSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<CaseStudiesSliceDefaultPrimary>,
+  Simplify<CaseStudiesSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *CaseStudies*
+ */
+type CaseStudiesSliceVariation = CaseStudiesSliceDefault;
+
+/**
+ * CaseStudies Shared Slice
+ *
+ * - **API ID**: `case_studies`
+ * - **Description**: CaseStudies
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CaseStudiesSlice = prismic.SharedSlice<
+  'case_studies',
+  CaseStudiesSliceVariation
+>;
 
 /**
  * Primary content in *Hero → Primary*
@@ -716,6 +797,11 @@ declare module '@prismicio/client' {
       BentoSliceDefaultItem,
       BentoSliceVariation,
       BentoSliceDefault,
+      CaseStudiesSlice,
+      CaseStudiesSliceDefaultPrimary,
+      CaseStudiesSliceDefaultItem,
+      CaseStudiesSliceVariation,
+      CaseStudiesSliceDefault,
       HeroSlice,
       HeroSliceDefaultPrimary,
       HeroSliceVariation,
