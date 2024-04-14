@@ -1,3 +1,4 @@
+import Bounded from '@/app/components/Bounded';
 import { createClient } from '@/prismicio';
 import { Content, isFilled } from '@prismicio/client';
 import { PrismicNextImage, PrismicNextLink } from '@prismicio/next';
@@ -32,7 +33,7 @@ const CaseStudies = async ({
   );
 
   return (
-    <section
+    <Bounded
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
@@ -79,7 +80,7 @@ const CaseStudies = async ({
           }
         })}
       </div>
-    </section>
+    </Bounded>
   );
 };
 
