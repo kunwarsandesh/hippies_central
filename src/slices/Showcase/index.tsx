@@ -4,7 +4,12 @@ import { Content } from '@prismicio/client';
 import { PrismicNextImage, PrismicNextLink } from '@prismicio/next';
 import { PrismicRichText, SliceComponentProps } from '@prismicio/react';
 import clsx from 'clsx';
+import { PiArrowsClockwise, PiGear } from 'react-icons/pi';
 
+const icons = {
+  gear: <PiGear />,
+  cycle: <PiArrowsClockwise />
+};
 /**
  * Props for `Showcase`.
  */
@@ -34,11 +39,14 @@ const Showcase = ({ slice }: ShowcaseProps): JSX.Element => {
       />
       <div className="mt-16 grid items-center rounded-xl border border-indigo-50/20 bg-gradient-to-b from-slate-50/15 to-slate-50/5 px-8 py-8 backdrop-blur-sm lg:grid-cols-3 lg:py-12">
         <div>
-          <>{slice.primary.icon}</>
+          <div className="w-fit rounded-lg bg-blue-500/35 p-4 text-3xl">
+            <>{slice.primary.icon && icons[slice.primary.icon]}</>
+          </div>
+
           <div className="mt-6 text-2xl font-normal">
             <PrismicRichText field={slice.primary.subheading} />
           </div>
-          <div className="mt-4 max-w-xl">
+          <div className="prose prose-invert mt-4 max-w-xl">
             <PrismicRichText field={slice.primary.body} />
           </div>
 
