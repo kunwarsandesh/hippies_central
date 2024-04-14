@@ -36,9 +36,12 @@ const CaseStudies = async ({
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-      <PrismicRichText field={slice.primary.heading} />
-      <PrismicRichText field={slice.primary.body} />
-
+      <div className="h2 max-w-2xl text-balance text-center text-5xl font-medium md:text-7xl">
+        <PrismicText field={slice.primary.heading} />
+      </div>
+      <div className="mx-auto mt-6 max-w-md text-balance text-center text-slate-300">
+        <PrismicRichText field={slice.primary.body} />
+      </div>
       <div className="mt-20 grid gap-16">
         {CaseStudies.map((caseStudy, index) => {
           if (caseStudy) {
@@ -66,7 +69,6 @@ const CaseStudies = async ({
                 <PrismicNextImage
                   field={caseStudy.data.logo_image}
                   quality={100}
-                  // alt={`Logo for ${caseStudy.data.company}`}
                   className={clsx(
                     'rounded-xl lg:col-span-2',
                     index % 2 && 'md:-order-1'
