@@ -58,7 +58,7 @@ const CaseStudies = async ({
                   className="after:absolute after:inset-0 hover:underline"
                 >
                   Read <PrismicText field={caseStudy.data.company} />
-                  case study
+                  &apos;s case study
                 </PrismicNextLink>
               </div>
             );
