@@ -1,9 +1,14 @@
 import Bounded from '@/app/components/Bounded';
 import { Content, asText } from '@prismicio/client';
 import { PrismicNextImage } from '@prismicio/next';
-import { PrismicRichText, SliceComponentProps } from '@prismicio/react';
+import {
+  PrismicRichText,
+  PrismicText,
+  SliceComponentProps
+} from '@prismicio/react';
 import { components } from '..';
 import { ChildProcess } from 'child_process';
+import clsx from 'clsx';
 
 /**
  * Props for `Bento`.
@@ -34,17 +39,31 @@ const Bento = ({ slice }: BentoProps): JSX.Element => {
           )
         }}
       />
-      <PrismicRichText field={slice.primary.body} />
-      {slice.items.map((item) => (
-        <div
-          className="glass-container w-fit rounded-lg"
-          key={asText(item.title)}
-        >
-          <PrismicRichText field={item.title} />
-          <PrismicRichText field={item.body} />
-          <PrismicNextImage field={item.image} />
-        </div>
-      ))}
+      <div className="mx-auto mt-6 max-w-md text-balance text-center text-slate-300">
+        <PrismicRichText field={slice.primary.body} />
+      </div>
+
+      <div className="mt-16 grid max-w-4xl grid-rows-[auto_auto_auto] gap-8 md:grid-cols-3 md:gap-10">
+        {slice.items.map((item) => (
+          <div
+            className={clsx(
+              'glass-container row-span-3 grid w-fit grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-gray-900 to-gray-950 p-4',
+              item.wide ? 'md:col-span-2' : 'md:col-span-1'
+            )}
+            key={asText(item.title)}
+          >
+            <h3 className="text-2xl">
+              <PrismicText field={item.title} />
+            </h3>
+
+            <div className="max-w-md text-balance text-slate-300">
+              <PrismicRichText field={item.body} />
+            </div>
+
+            <PrismicNextImage field={item.image} className="max-h-36 w-auto" />
+          </div>
+        ))}
+      </div>
     </Bounded>
   );
 };
