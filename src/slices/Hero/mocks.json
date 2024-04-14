@@ -1,64 +1,64 @@
 [
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "default",
-		"primary": {
-			"heading": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading1",
-						"content": {
-							"text": "Attempt"
-						}
-					}
-				]
-			},
-			"body": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Adipisicing aute fugiat cupidatat et incididunt mollit elit irure irure ex ex ad minim pariatur quis. Labore ad fugiat do in sint sint. Labore qui aliquip sint non."
-						}
-					}
-				]
-			},
-			"button_link": {
-				"__TYPE__": "LinkContent",
-				"value": {
-					"__TYPE__": "ExternalLink",
-					"url": "http://twitter.com"
-				}
-			},
-			"button_label": {
-				"__TYPE__": "FieldContent",
-				"value": "course",
-				"type": "Text"
-			},
-			"image": {
-				"__TYPE__": "ImageContent",
-				"origin": {
-					"id": "main",
-					"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
-					"width": 4000,
-					"height": 4000
-				},
-				"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
-				"width": 4000,
-				"height": 4000,
-				"edit": {
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 0
-					},
-					"background": "transparent"
-				},
-				"thumbnails": {}
-			}
-		},
-		"items": []
-	}
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "heading": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "Attempt"
+            }
+          }
+        ]
+      },
+      "body": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Adipisicing aute fugiat cupidatat et incididunt mollit elit irure irure ex ex ad minim pariatur quis. Labore ad fugiat do in sint sint. Labore qui aliquip sint non."
+            }
+          }
+        ]
+      },
+      "button_link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "http://twitter.com"
+        }
+      },
+      "button_label": {
+        "__TYPE__": "FieldContent",
+        "value": "course",
+        "type": "Text"
+      },
+      "image": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+          "width": 4000,
+          "height": 4000
+        },
+        "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+        "width": 4000,
+        "height": 4000,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {}
+      }
+    },
+    "items": []
+  }
 ]
