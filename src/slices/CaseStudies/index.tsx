@@ -49,11 +49,17 @@ const CaseStudies = async ({
                 <h3 className="4xl">
                   <PrismicText field={caseStudy.data.company} />
                 </h3>
-                <PrismicRichText field={caseStudy.data.description} />
+                <div className="max-w-md">
+                  <PrismicRichText field={caseStudy.data.description} />
+                </div>
+
                 <PrismicNextLink
                   document={caseStudy}
                   className="after:absolute after:inset-0 hover:underline"
-                ></PrismicNextLink>
+                >
+                  Read <PrismicText field={caseStudy.data.company} />
+                  case study
+                </PrismicNextLink>
               </div>
             );
           }
