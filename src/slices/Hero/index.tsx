@@ -42,10 +42,10 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           </ButtonLink>
         )}
         {isFilled.image(slice.primary.image) && (
-          <PrismicNextImage
-            className="rounded-lg mt-8"
-            field={slice.primary.image}
-          />
+          <div className="glass-container rounded-lg">
+            {' '}
+            <PrismicNextImage field={slice.primary.image} />
+          </div>
         )}
       </div>
     </Bounded>
