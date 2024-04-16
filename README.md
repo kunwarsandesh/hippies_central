@@ -6,7 +6,7 @@ Sandesh Kunwar
 Prismic is used as headless CMS.
 
 
-Site is hosted on [Vercel]([https://hippies-central-vert.vercel.app/]. 
+Site is hosted on [Vercel][[https://hippies-central-vert.vercel.app/]]. 
 
 
 
