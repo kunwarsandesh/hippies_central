@@ -1,6 +1,6 @@
-Einstaklingsverkefni 5
+#H1 Einstaklingsverkefni 5
 
-Sandesh Kunwar
+Developer: Sandesh Kunwar
 
 This project utilizes Prismic as a headless CMS for content management. The site is hosted on [Vercel](https://hippies-central-vert.vercel.app/). 
 
