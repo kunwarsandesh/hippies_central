@@ -22,7 +22,7 @@ The site is hosted on [Vercel](https://hippies-central-vert.vercel.app/).
  -   [React](https://react.dev/)
  -   [TypeScript](https://www.typescriptlang.org/)
  -   [SCSS/Sass](https://sass-lang.com/)
- -   [Tailwind CSS]([https://sass-lang.com/](https://tailwindcss.com/))
+ -   [Tailwind CSS](https://tailwindcss.com/)
  -   [Tailwind Typography](https://github.com/tailwindlabs/tailwindcss-typography)
 
 
