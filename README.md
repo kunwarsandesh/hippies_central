@@ -28,13 +28,13 @@ The site is hosted on [Vercel](https://hippies-central-vert.vercel.app/).
 
 #### Reusable Page Types /Slices :
 
-- ** HomePage:** The first reusable page type is ready, providing a foundation for the website's main content.
-- ** Case Study:** The second reusable page type is also functional, allowing the creation of multiple case studies with a consistent structure. This reusability simplifies content management, as demonstrated by using the same case study page for Patagonia and Urban Oasis.
+- **HomePage:** The first reusable page type is ready, providing a foundation for the website's main content.
+- **Case Study:** The second reusable page type is also functional, allowing the creation of multiple case studies with a consistent structure. This reusability simplifies content management, as demonstrated by using the same case study page for **[Patagonia](https://hippies-central-vert.vercel.app/case-study/patagonia)** and **[Urban Oasis](https://hippies-central-vert.vercel.app/case-study/urban-oasis)**.
 
 -There are also lots of slices which can be reused , such as bento , showcase , and so on.
 
 
-###Further Development:
+### Further Development:
 
 This starter template provides a solid foundation. You can further customize it by:
 
