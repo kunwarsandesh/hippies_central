@@ -1,4 +1,4 @@
-#H1 Einstaklingsverkefni 5
+# Einstaklingsverkefni 5
 
 Developer: Sandesh Kunwar
 
