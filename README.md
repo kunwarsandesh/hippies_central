@@ -25,6 +25,15 @@ The site is hosted on [Vercel](https://hippies-central-vert.vercel.app/).
  -   [Tailwind CSS](https://tailwindcss.com/)
  -   [Tailwind Typography](https://github.com/tailwindlabs/tailwindcss-typography)
 
+### Backend:
+
+- [Prismic](https://prismic.io/) (Headless CMS)
+
+### Development Tools:
+
+- [ESLint](https://eslint.org/) (Linter)
+- [Prettier](https://prettier.io/) (Code formatter)
+- [Slice Machine](https://prismic.io/docs/slice-machine) (Content modeling tool)
 
 #### Reusable Page Types /Slices :
 
@@ -34,14 +43,5 @@ The site is hosted on [Vercel](https://hippies-central-vert.vercel.app/).
 - There are also lots of slices which can be reused , such as bento , showcase , and so on.
 
 
-### Further Development:
-
-This starter template provides a solid foundation. You can further customize it by:
-
-- Creating additional reusable page types.
-- Implementing custom components and functionalities.
-- Integrating with third-party libraries and services.
-
-Feel free to contribute or raise issues on the project's GitHub repository.
 
 
