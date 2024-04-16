@@ -1,15 +1,12 @@
 Einstaklingsverkefni 5
 
-Sandesh Kunwar 
+Sandesh Kunwar
 
+This project utilizes Prismic as a headless CMS for content management. The site is hosted on [Vercel](https://hippies-central-vert.vercel.app/). 
 
-Prismic is used as headless CMS.
+For styling, a combination of Tailwind CSS, SCSS/Sass, and Tailwind Typography was employed.
 
+Reusable Page Types:
 
-Site is hosted on [Vercel](https://hippies-central-vert.vercel.app/). 
-
-
-for styling : Tailwind CSS , along with Scss/Sass, Tailwind Typography , was used . 
-
-HomePage (1st resusable page type) is ready and also Case Study(2nd resusable page type) is ready . So, Content Management team can easily make multiple pages of this type as they are resuable page type. for e.g we used the same case study reusable page for patagonia case study and urban oasis's case study.
-  
+    HomePage: The first reusable page type is ready, providing a foundation for the website's main content.
+    Case Study: The second reusable page type is also functional, allowing the creation of multiple case studies with a consistent structure. This reusability simplifies content management, as demonstrated by using the same case study page for Patagonia and Urban Oasis.
