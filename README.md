@@ -3,6 +3,7 @@
 ## Developer: Sandesh Kunwar
 
 The site is hosted on [Vercel](https://hippies-central-vert.vercel.app/). 
+https://hippies-central-vert.vercel.app/
 
 
 ### Key Features
