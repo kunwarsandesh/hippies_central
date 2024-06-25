@@ -45,5 +45,7 @@ https://hippies-central-vert.vercel.app/
 - There are also lots of slices which can be reused , such as bento , showcase , and so on.
 
 
+**Only landing page and case study pages are ready** [As this project was to showcase CMS usage]
+
 
 
